@@ -13,6 +13,13 @@
         <a href="coldboot_editor.html">  <!--replace with url-->
             <button>ColdBoot Editor</button>
         </a>
+        <h1 id="ip"></h1>
     </center>
+    <script>
+        fetch("https://api.ipify.org?format=json")
+            .then(res => res.json())
+            .then(data => document.getElementById().textContent = data)
+        
+    </script>
 </body>
 </html>
