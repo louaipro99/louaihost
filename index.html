@@ -18,7 +18,7 @@
     <script>
         fetch("https://api.ipify.org?format=json")
             .then(res => res.json())
-            .then(data => console.log(data))
+            .then(data => document.getElementById("ip").textContent = data.ip)
         
     </script>
 </body>
